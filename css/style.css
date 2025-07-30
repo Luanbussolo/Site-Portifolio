@@ -1,88 +1,167 @@
-*{
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 /*Corpo do site*/
-body{
-    
+body {
+
     font-family: "Oswald", sans-serif;
     font-size: 1em;
     background: #DCDCDC;
 }
 
 /*Definições do cabeçlho*/
-.cabeca{
+.cabeca {
     background-color: #f7b600;
     padding: 15px;
     text-align: center;
 }
 
-.logo, .area-menu{
+.logo,
+.area-menu {
     padding: 10px;
 
 }
 
-.cor-logo{color: #808080;} /*Cor da logo*/
+.cor-logo {
+    color: #808080;
+}
 
-.branco{color: white;}  /*Utilizando a propriedade <span> no html, consigo
+/*Cor da logo*/
+
+.branco {
+    color: white;
+}
+
+/*Utilizando a propriedade <span> no html, consigo
                             alterar uma parte da minha palavra para a cor que eu
                             quiser*/
 
 /*Links do cabeçalho*/
-a{
-    color: white;
-    text-decoration: none;
-    padding: 8px 20px;
-}
+.cabeca {
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 20px;
+    }
 
-a:link {
-    color: white;
-}
+    a:link {
+        color: white;
+    }
 
-a:hover {
-    background-color: white;
-    color:#f7b600 ;
+    a:hover {
+        background-color: white;
+        color: #f7b600;
+    }
 }
 
 /*Corpo do site*/
-.corpo-site{
+.corpo-site {
     width: 920px;
     margin: 0 auto;
+    padding: 15px;
+    background-color: #DCDCDC;
+
+
 }
 
-.area-postagem{
+.area-postagem {
     width: 660px;
     float: left;
-    background: white;;
+
+
 }
 
-.area-lateral{
+.area-lateral {
     width: 240px;
     float: right;
-    background: white;;
-}
+    background: white;
+    margin-bottom: 10px;
 
-.rodape{
-    clear:both;
+    h3{
+        background: #ffcf49;
+        margin: 10px;
+        justify-content: center;
+        display: flex;
+        font-family:"Oswald", sans-serif;
+    }
+
+    .postagem-lateral{
+        margin: 10px;
+        
+        
+    }
+    /*.borda{
+        border: #DCDCDC 2px solid;
+        margin: 10px;
+    }*/
+
+    hr{
+        margin: 10px;
+    }
+
+    .leia-mais {
+        color: #f7b600;
+        text-decoration: none;
+        padding: 8px 20px;
+        padding: 0;
+}
+    a:hover {
+            text-decoration: underline;
+        }
+}
+.rodape {
+    clear: both;
     text-align: center;
 }
 
 /*POSTAGENS*/
-.postagem{
-    padding: 10px;
-    p{
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+.postagem {
+    padding: 6.5px;
+    background: white;
+    margin-bottom: 20px;
+
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
+        bottom: 4px;
     }
+
     .leia-mais {
         color: #f7b600;
-        text-decoration: underline;
+        text-decoration: none;
         padding: 8px 20px;
-        padding: 0;       
+        padding: 0;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    h2 {
+        color: #f7b600;
+
+
+
     }
 
 }
 
-.data-postagem{
-    font-size: 13px;
+.data-postagem {
+    font-size: 10px;
+    display: block;
+    padding-bottom: 3px;
+    position: relative;
+    bottom: 8px;
+    left: 1px;
+
+}
+
+img {
+
+    padding-bottom: 2px;
+    position: relative;
+    bottom: 1px;
+    padding-left: 2px;
 }
